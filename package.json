@@ -1,5 +1,6 @@
 {
-  "name": "oo-api",
+  "name": "stationfiveapi",
+  "author": "Arvin Jayson Tamayo Castro",
   "version": "1.0.0",
   "private": true,
   "script": {
@@ -16,5 +17,8 @@
     "mongoose-unique-validator": "^3.0.0",
     "multer": "^1.4.3",
     "nodemailer": "^6.7.2"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
