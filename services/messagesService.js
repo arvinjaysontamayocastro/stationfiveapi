@@ -10,7 +10,7 @@ exports.post = function (message) {
   var index = -1;
   var response = "";
   var contextFound = ""; // note, this can be used in the future, for now, just set its value
-  internalDatabase.foreach (data => {
+  internalDatabase.forEach (data => {
     data.context.forEach(context => {
       var indexOfContext = messageLowerCase.indexOf(context.toLowerCase);
       if (indexOfContext != -1 && (index === -1 || index > indexOfContext)) { // note, decided to have internalDatabase.contextLowerCase for faster output (this in concept should have input of .toLowerCase() when inputing)
